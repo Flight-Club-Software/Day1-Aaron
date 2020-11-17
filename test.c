@@ -31,3 +31,27 @@ int printStars() {
     }
     return 0;
 }
+
+//More array stuff
+#include <stdio.h>
+
+int main()
+{
+    int nums[10]; //Declare an integer array of size 10
+    for (int i=0; i<sizeof(nums); i++) {
+        printf("%lf/n",nums[i]);
+    }
+    
+    char msg[11] = "Hello world";
+    for (int i=0; i<sizeof(nums); i++) {
+        printf("%c",msg[i]);
+    }
+    msg[1] = 'a';
+    for (int i=0; i<sizeof(nums); i++) {
+        printf("%c",msg[i]);
+    }
+    
+    //Access the 1st value inside of nums by using nums[0]
+
+    return 0;
+}
